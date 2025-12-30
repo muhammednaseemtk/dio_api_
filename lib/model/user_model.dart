@@ -11,7 +11,7 @@ class UserModel {
     required this.date
   });
 
-  factory UserModel.fromjson(Map<String,dynamic>json) {
+  factory UserModel.fromJson(Map<String,dynamic>json) {
     return UserModel(id: json['id'], name: json['name'], age: json['age'], date: json['date']);
   }
 }
